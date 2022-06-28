@@ -9,9 +9,8 @@ const computerPlay = () => {
   }
 };
 
-const computerSelection = computerPlay();
-
-const game = (computerSelection, playerSelection) => {
+const playRound = (computerSelection, playerSelection) => {
+  playerSelection = playerSelection.toLowerCase();
   if (playerSelection === computerSelection) {
     return "Tie";
   } else if (playerSelection == "rock") {
@@ -35,4 +34,6 @@ const game = (computerSelection, playerSelection) => {
   }
 };
 
-console.log(game(computerSelection, "rock"));
+const playerSelection = "Paper";
+const computerSelection = computerPlay();
+console.log(playRound(computerSelection, playerSelection));
