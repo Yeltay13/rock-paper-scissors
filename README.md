@@ -1,1 +1,2 @@
-One of the projects on The Odin Projects
+One of the projects on The Odin Projects.
+                  TYR!
